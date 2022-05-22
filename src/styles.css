@@ -3,7 +3,5 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    background-image: url('../img/pattern.png');
-  }
+
 }

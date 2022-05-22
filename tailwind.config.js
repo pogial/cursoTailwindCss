@@ -3,7 +3,11 @@ module.exports = {
     './index.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'body-pattern': "url('../img/pattern.png')",
+      }
+    },
   },
   plugins: [],
 }
