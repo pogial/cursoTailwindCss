@@ -3,5 +3,118 @@
 @tailwind utilities;
 
 @layer base {
+  /* FUENTES */
+  @font-face{
+      font-family: "TrebuchetMS";
+      src: url('fonts/TrebuchetMS.ttf');
+      font-weight: normal;
+      font-style: normal;
+  }
 
+  @font-face{
+      font-family: "BebasNeue";
+      src: url('fonts/BebasNeue.otf');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face{
+      font-family: "WebSymbolsRegular";
+      src: url('fonts/websymbols-regular-webfont.eot');
+      src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+          url('fonts/websymbols-regular-webfont.woff') format('woff'),
+          url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+          url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  .symbol{
+    font-family: "WebSymbolsRegular";
+  }
+
+  .bebas{
+    font-family: "BebasNeue";
+  }
+
+  .trebuche{
+    font-family: "TrebuchetMS";
+  }
+
+}
+
+@layer components{
+  .header{
+    @apply h-20
+           bg-black
+           text-white
+           bebas
+           xs:h-36;
+  }
+  
+  .logo{
+    @apply w-48
+           pt-0.5
+           pb-0.5
+           ml-10
+           mt-4
+           text-center
+           tracking-wider
+           cursor-pointer
+           overflow-hidden
+           transition
+           duration-300
+           bg-light-blue
+           hover:text-black
+           hover:bg-gray-400
+           xs:ml-0;
+  }
+
+  .nut{
+    @apply symbol
+           block
+           float-left
+           text-3xl
+           mt-1
+           ml-11;
+  }
+
+  .logo-name{
+    @apply block
+           float-right
+           text-4xl
+           mt-1.5
+           mr-10
+           transition
+           duration-100;
+  }
+  
+  .menu{
+    @apply flex
+           flex-row
+           h-20
+           items-center
+           text-2xl
+           text-center
+           mr-10
+           xs:mr-0
+           xs:text-center
+           md:justify-end;
+  }
+  
+  .menu-item{
+    @apply mr-5 
+           ml-5 
+           tracking-wider 
+           flex-none
+           xs:flex-1;
+  }
+
+  .menu-item-a{
+    @apply block 
+           transition 
+           duration-200 
+           hover:text-light-blue 
+           transform hover:scale-125;
+  }
 }
