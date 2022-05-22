@@ -9,6 +9,10 @@ module.exports = {
       },
       backgroundImage: {
         'body-pattern': "url('../img/pattern.png')",
+        'banner-background': "url('../img/bakbaner.png')"
+      },
+      backgroundPosition:{
+        'banner-position': '-200px -200px'
       },
       colors: {
         'light-blue': '#37bcf9',

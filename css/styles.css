@@ -539,7 +539,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.header{
+.main-header{
   font-family: "BebasNeue";
   height: 5rem;
   --tw-bg-opacity: 1;
@@ -549,8 +549,61 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 768px) {
-  .header {
+  .main-header {
     height: 9rem;
+  }
+}
+
+.header {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .header {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .header {
+    max-width: 1536px;
+  }
+}
+
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 91.666667%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
   }
 }
 
@@ -665,13 +718,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(55 188 249 / var(--tw-text-opacity));
 }
 
+.banner {
+  margin: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 7rem;
+  width: 100%;
+  overflow: hidden;
+  border-width: 8px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-image: url('../img/bakbaner.png');
+  background-position: -200px -200px;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.text-banner {
+  margin: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  font-family: "BebasNeue";
+  text-shadow: 2px 2px 1px black;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.flex {
-  display: flex;
 }
 
 .w-11\/12 {
@@ -712,19 +794,9 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: none;
 }
 
-@media (min-width: 768px) {
-  .md\:flex-row {
-    flex-direction: row;
-  }
-}
-
 @media (max-width: 768px) {
   .xs\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .xs\:flex-col {
-    flex-direction: column;
   }
 }
