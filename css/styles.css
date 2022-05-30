@@ -747,6 +747,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (max-width: 768px) {
+  .text-banner {
+    margin-top: 2rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.text-banner{
   font-family: "BebasNeue";
   text-shadow: 2px 2px 1px black;
 }

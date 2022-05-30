@@ -57,7 +57,7 @@
            mx-auto 
            flex 
            md:flex-row 
-          xs:flex-col;
+           xs:flex-col;
   }
   
   .logo{
@@ -147,7 +147,9 @@
            tracking-wider
            m-7
            mx-auto
-           text-center;
+           text-center
+          xs:text-3xl
+          xs:mt-8;
     font-family: "BebasNeue";
     text-shadow: 2px 2px 1px black;
   }
