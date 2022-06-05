@@ -515,9 +515,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 672px) {
+  .container {
+    max-width: 672px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+
+@media (min-width: 834px) {
+  .container {
+    max-width: 834px;
   }
 }
 
@@ -530,6 +542,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1394px) {
+  .container {
+    max-width: 1394px;
   }
 }
 
@@ -548,9 +566,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 672px) {
   .main-header {
-    height: 9rem;
+    height: 13rem;
   }
 }
 
@@ -564,9 +582,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 672px) {
+  .header {
+    max-width: 672px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     max-width: 768px;
+  }
+}
+
+@media (min-width: 834px) {
+  .header {
+    max-width: 834px;
   }
 }
 
@@ -579,6 +609,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1280px) {
   .header {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1394px) {
+  .header {
+    max-width: 1394px;
   }
 }
 
@@ -601,7 +637,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 672px) {
   .header {
     flex-direction: column;
   }
@@ -633,7 +669,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 672px) {
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
   .logo {
     margin-left: 0px;
   }
@@ -680,7 +723,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 672px) {
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
   .menu {
     margin-right: 0px;
     text-align: center;
@@ -694,7 +745,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.05em;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 672px) and (max-width: 768px) {
   .menu-item {
     flex: 1 1 0%;
   }
@@ -749,7 +800,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 672px) {
+  .text-banner {
+    margin-top: 2rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
   .text-banner {
     margin-top: 2rem;
     font-size: 1.875rem;
@@ -760,6 +819,201 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-banner{
   font-family: "BebasNeue";
   text-shadow: 2px 2px 1px black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 672px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+.card {
+  margin: 1.25rem;
+  margin-top: 2.5rem;
+  height: 20rem;
+  flex: 1 1 0%;
+  cursor: pointer;
+  overflow: hidden;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.card:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 672px) {
+  .card {
+    height: 1.5rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
+  .card {
+    margin: 0.5rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 834px) {
+  .card {
+    height: 10rem;
+  }
+}
+
+.card-icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  display: block;
+  height: 8rem;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+@media (max-width: 672px) {
+  .card-icon {
+    margin-top: 0.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 834px) {
+  .card-icon {
+    margin-top: 1.5rem;
+    height: 5rem;
+  }
+}
+
+.card-icon{
+  font-family: "WebSymbolsRegular";
+}
+
+.card-category {
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(3 112 185 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+@media (max-width: 672px) {
+  .card-category {
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
+  .card-category {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 834px) {
+  .card-category {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1394px) {
+  .card-category {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1394px) and (max-width: 1542px) {
+  .card-category {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.card-description {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(3 112 185 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+@media (max-width: 672px) {
+  .card-description {
+    display: none;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
+  .card-description {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 834px) {
+  .card-description {
+    display: none;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1394px) {
+  .card-description {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 1394px) and (max-width: 1542px) {
+  .card-description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.card-description{
+  font-family: "TrebuchetMS";
 }
 
 .mx-auto {
@@ -805,7 +1059,17 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: none;
 }
 
-@media (max-width: 768px) {
+.group:hover .group-hover\:text-light-blue {
+  --tw-text-opacity: 1;
+  color: rgb(55 188 249 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 672px) and (max-width: 768px) {
   .xs\:mx-auto {
     margin-left: auto;
     margin-right: auto;

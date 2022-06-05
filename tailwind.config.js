@@ -5,7 +5,11 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'xs': {'max':'768px'},
+        'xxs': {'max':'672px'},
+        'xs': {'min':'672px','max':'768px'},
+        '4xl': {'min':'768px','max':'834px'},        
+        '5xl': {'min':'834px','max':'1394px'},        
+        '6xl': {'min':'1394px','max':'1542px'},
       },
       backgroundImage: {
         'body-pattern': "url('../img/pattern.png')",

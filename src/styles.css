@@ -48,7 +48,7 @@
            bg-black
            text-white
            bebas
-           xs:h-36;
+           xxs:h-52;
   }
 
   .header{
@@ -57,7 +57,7 @@
            mx-auto 
            flex 
            md:flex-row 
-           xs:flex-col;
+           xxs:flex-col;
   }
   
   .logo{
@@ -75,7 +75,8 @@
            bg-light-blue
            hover:text-black
            hover:bg-gray-400
-           xs:ml-0;
+           xs:ml-0
+           xxs:mx-auto;
   }
 
   .nut{
@@ -107,6 +108,8 @@
            mr-10
            xs:mr-0
            xs:text-center
+           xxs:flex-col
+           xxs:mx-auto
            md:justify-end;
   }
   
@@ -148,9 +151,88 @@
            m-7
            mx-auto
            text-center
-          xs:text-3xl
-          xs:mt-8;
+           xs:text-3xl
+           xs:mt-8
+           xxs:text-3xl
+           xxs:mt-8;
     font-family: "BebasNeue";
     text-shadow: 2px 2px 1px black;
+  }
+
+  .cards{
+    @apply flex 
+           flex-nowrap 
+           justify-between
+           xxs:flex-col;
+  }
+  
+  .card{
+    @apply flex-1
+           h-80
+           border-2
+           border-gray-200
+           shadow-md
+           bg-white
+           overflow-hidden
+           m-5
+           mt-10
+           pl-5
+           pr-5
+           cursor-pointer
+           transition
+           duration-300
+           hover:bg-black
+           4xl:h-40
+           xs:h-40
+           xs:m-2
+           xxs:h-6;
+  }
+
+  .card-icon{
+    @apply block
+           w-full
+           h-32
+           text-5xl
+           text-center
+           mt-12
+           mx-auto
+           transition
+           duration-300
+           4xl:mt-6
+           4xl:h-20
+           xxs:h-10
+           xxs:mt-2;
+    font-family: "WebSymbolsRegular";
+  }
+
+  .card-category{
+    @apply w-full
+           h-12
+           text-xl
+           font-bold
+           text-center
+           text-dark-blue
+           transition
+           duration-300
+           6xl:text-lg           
+           5xl:text-sm
+           4xl:text-xs
+           xs:hidden
+           xxs:mt-5
+           xxs:text-sm
+  }
+
+  .card-description{
+    @apply text-center
+           text-dark-blue
+           text-base
+           transition
+           duration-300
+           6xl:text-sm           
+           5xl:text-xs
+           4xl:hidden
+           xs:hidden
+           xxs:hidden;
+    font-family: "TrebuchetMS";
   }
 }
