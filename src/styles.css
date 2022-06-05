@@ -144,6 +144,7 @@
   
   .text-banner{
     @apply block
+           bebas
            text-white
            text-5xl
            font-normal
@@ -155,7 +156,6 @@
            xs:mt-8
            xxs:text-3xl
            xxs:mt-8;
-    font-family: "BebasNeue";
     text-shadow: 2px 2px 1px black;
   }
 
@@ -190,6 +190,7 @@
 
   .card-icon{
     @apply block
+           symbol
            w-full
            h-32
            text-5xl
@@ -202,7 +203,6 @@
            4xl:h-20
            xxs:h-10
            xxs:mt-2;
-    font-family: "WebSymbolsRegular";
   }
 
   .card-category{
@@ -223,7 +223,8 @@
   }
 
   .card-description{
-    @apply text-center
+    @apply trebuche
+           text-center
            text-dark-blue
            text-base
            transition
@@ -233,6 +234,95 @@
            4xl:hidden
            xs:hidden
            xxs:hidden;
-    font-family: "TrebuchetMS";
+  }
+
+  .side{
+    @apply flex-none 
+           w-72 
+           min-h-full;
+  }
+
+  .articles{
+    @apply flex-grow 
+           mr-10;
+  }
+
+  .articles-header{
+    @apply block 
+           bebas
+           font-normal
+           w-full 
+           h-20 
+           text-center 
+           text-4xl 
+           tracking-widest 
+           pt-5 
+           border
+           bg-titles;
+  }
+
+  .article{
+    @apply w-full 
+           h-auto 
+           bottom-1 
+           border-gray-200 
+           m-10 
+           mx-auto 
+           p-2.5 
+           bg-white 
+           text-black 
+           shadow-md;
+  }
+
+  .date-category-article{
+    @apply float-right 
+           bg-gray-700 
+           h-10 
+           leading-6 
+           p-2 
+           text-white 
+           -m-2.5 
+           text-sm 
+           rounded-bl-lg;
+  }
+
+  .date-category-article span{
+    @apply m-2.5;
+  }
+
+  .articles-title{
+    @apply block 
+           text-2xl 
+           m-1;
+  }
+
+  .article-reference{
+    @apply text-light-blue
+           font-semibold 
+           hover:underline;
+  }
+
+  .article-detail{
+    @apply block 
+           mt-3 
+           mb-3 
+           text-base 
+           font-sans 
+           font-normal;
+  }
+
+  .title-search{
+    @apply block 
+           bebas
+           h-11 
+           leading-10 
+           font-normal 
+           text-3xl 
+           tracking-widest 
+           pl-3.5 
+           pt-1 
+           mb-3.5 
+           border
+           bg-titles;
   }
 }

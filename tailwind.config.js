@@ -13,7 +13,8 @@ module.exports = {
       },
       backgroundImage: {
         'body-pattern': "url('../img/pattern.png')",
-        'banner-background': "url('../img/bakbaner.png')"
+        'banner-background': "url('../img/bakbaner.png')",
+        'titles': "url('../img/pxgray.png')",
       },
       backgroundPosition:{
         'banner-position': '-200px -200px'

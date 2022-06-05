@@ -786,7 +786,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.text-banner {
+.text-banner{
+  font-family: "BebasNeue";
   margin: 1.75rem;
   margin-left: auto;
   margin-right: auto;
@@ -817,7 +818,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-banner{
-  font-family: "BebasNeue";
   text-shadow: 2px 2px 1px black;
 }
 
@@ -881,7 +881,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.card-icon {
+.card-icon{
+  font-family: "WebSymbolsRegular";
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
@@ -910,10 +911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 1.5rem;
     height: 5rem;
   }
-}
-
-.card-icon{
-  font-family: "WebSymbolsRegular";
 }
 
 .card-category {
@@ -967,7 +964,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.card-description {
+.card-description{
+  font-family: "TrebuchetMS";
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1012,13 +1010,123 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.card-description{
-  font-family: "TrebuchetMS";
+.side {
+  min-height: 100%;
+  width: 18rem;
+  flex: none;
+}
+
+.articles {
+  margin-right: 2.5rem;
+  flex-grow: 1;
+}
+
+.articles-header{
+  font-family: "BebasNeue";
+  display: block;
+  height: 5rem;
+  width: 100%;
+  border-width: 1px;
+  background-image: url('../img/pxgray.png');
+  padding-top: 1.25rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.article {
+  bottom: 0.25rem;
+  margin: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.625rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.date-category-article {
+  float: right;
+  margin: -0.625rem;
+  height: 2.5rem;
+  border-bottom-left-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.date-category-article span {
+  margin: 0.625rem;
+}
+
+.articles-title {
+  margin: 0.25rem;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.article-reference {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(55 188 249 / var(--tw-text-opacity));
+}
+
+.article-reference:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.article-detail {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  display: block;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.title-search{
+  font-family: "BebasNeue";
+  margin-bottom: 0.875rem;
+  display: block;
+  height: 2.75rem;
+  border-width: 1px;
+  background-image: url('../img/pxgray.png');
+  padding-left: 0.875rem;
+  padding-top: 0.25rem;
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .w-11\/12 {
@@ -1044,6 +1152,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .animate-spin-slow {
   -webkit-animation: spin 2s linear infinite;
           animation: spin 2s linear infinite;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .bg-body-pattern {
