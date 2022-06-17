@@ -271,7 +271,9 @@
            p-2.5 
            bg-white 
            text-black 
-           shadow-md;
+           shadow-md
+           xxs:flex-col 
+           xs:flex-col;
   }
 
   .date-category-article{
@@ -293,7 +295,11 @@
   .articles-title{
     @apply block 
            text-2xl 
-           m-1;
+           m-1
+           xxs:text-center
+           xxs:pt-7
+           xs:text-center
+           xs:pt-7;
   }
 
   .article-reference{
@@ -311,7 +317,7 @@
            font-normal;
   }
 
-  .title-search{
+  .title-aside{
     @apply block 
            bebas
            h-11 
@@ -325,4 +331,118 @@
            border
            bg-titles;
   }
+
+  .aside-box{
+    @apply w-10/12 
+          h-60 
+          mx-auto 
+          mt-5 
+          mb-7 
+          pt-1 
+          bg-white;
+  }
+
+  .search{
+    @apply w-11/12 
+          h-7 
+          m-2.5 
+          mx-auto 
+          bg-white 
+          border-gray-200 
+          rounded 
+          shadow-inner;
+  }
+
+  .search-text{
+    @apply w-10/12 
+           h-6 
+           border-none 
+           pl-1.5 
+           rounded-md 
+           bg-blue-200 
+           text-gray-500 
+           transition 
+           duration-300 
+           outline-none 
+           focus:outline-none;
+  }
+
+  .search-button{
+    @apply symbol 
+           h-6 
+           cursor-pointer 
+           text-base 
+           bg-transparent 
+           border-none 
+           text-gray-500 
+           pl-1.5;
+  }
+
+  .label-email{
+    @apply symbol 
+           text-center 
+           absolute 
+           ml-7 
+           mt-1 
+           h-8;
+  }
+
+  .login-input{
+    @apply block 
+           mx-auto 
+           mt-5 
+           w-10/12 
+           h-8 
+           border-gray-300 
+           shadow-inner 
+           pl-7 
+           rounded-md 
+           text-gray-500 
+           transition 
+           duration-300 
+           outline-none 
+           focus:outline-none 
+           focus:text-gray-600;
+  }
+
+  .login-button{
+    @apply trebuche 
+           w-24 
+           h-8 
+           mt-5 
+           ml-3 
+           mb-5 
+           text-center 
+           text-white 
+           text-base 
+           border-dark-blue 
+           bg-gradient-to-b 
+           from-light-blue 
+           to-dark-blue 
+           rounded-none 
+           cursor-pointer 
+           font-light 
+           transition 
+           duration-300 
+           shadow-md;
+    }
+
+    .login-link{
+      @apply block 
+             ml-4
+             text-sm 
+             text-gray-600 
+             hover:underline 
+             hover:text-dark-blue;
+    }
+
+    .social-networks{
+      @apply symbol 
+             block 
+             text-gray-600 
+             text-3xl 
+             mt-3 
+             mb-5 
+             ml-5;
+    }
 }
